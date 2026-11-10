@@ -3,7 +3,25 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import streamlit as st
+import streamlit.components.v1 as components
 import plotly.express as px
+
+# ---------------------------------------------------------
+# Google Analytics 4 (GA4) Live Event Tracking Integration
+# ---------------------------------------------------------
+GA_MEASUREMENT_ID = "G-JRGF2JF3H4"
+
+ga4_code = f"""
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA_MEASUREMENT_ID}');
+</script>
+"""
+components.html(ga4_code, height=0, width=0)
 
 # 1. Page Configuration
 st.set_page_config(
