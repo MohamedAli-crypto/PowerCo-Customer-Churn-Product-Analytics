@@ -52,6 +52,7 @@ PowerCo-Customer-Churn-Product-Analytics/
 2. **Cohort & Segment Analysis:** Visual breakdown of churn trends across joining years and net margin spreads.
 3. **20% Discount Simulator:** Interactive tool simulating price sensitivity interventions to test customer retention predictions.
 4. **Funnel Analysis (GA4 Context):** Maps user journey drop-offs across web event steps.
+5. **GA4 Event Tracking & Analytics:** Integrated Google Analytics 4 (`gtag.js`) event tracking snippet directly within the Streamlit interface for user session monitoring and funnel mapping.
 
 ---
 
