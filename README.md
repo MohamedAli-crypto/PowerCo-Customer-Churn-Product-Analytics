@@ -2,6 +2,15 @@
 
 An end-to-end data product & retention analytics system built to analyze customer churn, simulate price sensitivity interventions, and map user behavior funnels for PowerCo.
 
+## 🎯 Business Problem
+PowerCo, a major gas and electricity utility, is facing a significant churn rate among its Small & Medium Enterprise (SME) customers. The prevailing hypothesis is that churn is driven by high price sensitivity. The business needs to identify at-risk customers and evaluate if offering a targeted 20% discount is a financially viable retention strategy.
+
+## 💡 The Solution (Data Product)
+Instead of a static analysis notebook, I built an end-to-end **Retention Analytics Dashboard**. 
+* **Data Pipeline:** Engineered using SQLite and SQL Window Functions to extract historical churn metrics and calculate Revenue at Risk.
+* **Prescriptive Analytics (The Simulator):** Developed an interactive 20% Discount Simulator. It empowers decision-makers to select at-risk customers and instantly calculate the **Cost of Retention vs. Cost of Churn**, ensuring discounts are only offered when the saved revenue outweighs the discount cost.
+* **Behavioral Tracking:** Integrated Google Analytics 4 (GA4) directly into the Streamlit app to monitor user interactions and funnel drop-offs.
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-lightgrey)
